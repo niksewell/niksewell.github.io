@@ -1,0 +1,166 @@
+
+/* ==========================================================================
+   Base styles:
+   ========================================================================== */
+/* Fix to include padding and border in the total width for each element */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+/* Fix for responsive images */
+img {
+  max-width: 100%;
+}
+
+button {
+  text-transform: uppercase;
+  outline: none;
+  padding: 10px;
+}
+
+
+/*BUTTONS*/
+
+.white-button {
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+}
+
+.white-button:hover {
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+}
+
+.black-button {
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+}
+
+.black-button:hover {
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+}
+
+
+/*NAV*/
+
+.main-nav a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0px 50px;
+}
+
+.main-nav {
+margin: 20px 0px;
+background-color: white;
+}
+
+nav a:hover {
+  opacity: .5;
+}
+
+.scrolled {
+  position: fixed;
+  z-index: 100;
+  top:0;
+}
+
+header img {
+  padding: 110px;
+  /*height: 100px;*/
+}
+
+header img:hover {
+  opacity: 0.25;
+}
+
+/*Who we are SECTION 2*/
+
+.who-we-are {
+  padding: 50px 0px 200px 0px;
+  background-color: black;
+  color: white;
+}
+
+.who-we-are p {
+  margin-top: 30px;
+  margin: 30px 175px 0px 175px;
+  padding: 0px 50px;
+}
+
+/*Dance With Us SECTION 3*/
+
+.dance-with-us {
+  padding: 50px 0px 200px 0px;
+}
+
+.dance-with-us h1 {
+  margin-bottom: 30px
+}
+
+.dance-with-us button {
+  margin: 0px 10px;
+}
+
+/*FACULTY SECTION 4*/
+
+.faculty {
+  color: white;
+  background-color: black;
+}
+
+.faculty-text {
+  padding: 50px 600px 400px 0px;
+}
+
+.faculty-img {
+  display: inline-block;
+
+}
+/*FAQS SECTION 5*/
+
+.faqs {
+  background-color: white;
+  padding: 50px 0px 200px 0px;
+}
+
+/*SOCIAL MEDIA SECTION 6*/
+
+.social-media {
+  background-color: black;
+  padding: 50px 0px 200px 0px;
+  color: white;
+}
+
+.icons a{
+  color: white;
+  margin: 20px;
+  font-size: 30px;
+  padding: 30px 0px;
+}
+
+.icons a:hover {
+  opacity: 0.5;
+}
+
+/*FOOTER*/
+
+footer {
+  color: black;
+  background-color: white;
+  padding: 5px 1000px 5px 0px;
+  font-size: 13px;
+}
