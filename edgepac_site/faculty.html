@@ -3,15 +3,14 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>faculty</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
@@ -19,6 +18,7 @@
 
     <body>
 
+<section id="faculty-pg">
       <div class="main-nav">
         <nav>
           <a href="index.html">Home</a>
@@ -29,39 +29,57 @@
         </nav>
       </div>
 
-<h1>EDGE PAC Team</h1>
-<p>EDGE offers Jazz, Ballet, Tap, Hip Hop, Jazz Funk, Contemporary, Theatre Dance, Turns and
- Jumps, Salsa and many Dance fitness styles. The faculty is a who’s who of industry choreographers, teachers and
- performers whose instruction and work have inspired generations of dancers.</p>
-
-<div class="dance-style-buttons">
-   <button class="white-button">Contemporary Jazz</button>
-   <button class="white-button">Hip Hop</button>
-   <button class="white-button">Jazz Funk</button>
-   <button class="white-button">Ballet</button>
+<div class="faculty-paragraph">
+  <h1>EDGE PAC Team</h1>
+  <p>EDGE offers Jazz, Ballet, Tap, Hip Hop, Jazz Funk, Contemporary, Theatre Dance, Turns and
+   Jumps, Salsa and many Dance fitness styles. The faculty is a who’s who of industry choreographers, teachers and
+   performers whose instruction and work have inspired generations of dancers.</p>
 </div>
 
-  <div class="faculty-img">
-     <img src="img/tovaris.jpg" alt="Tovaris">
-     <img src="img/sabrina.jpg" alt="Sabrina">
-     <img src="img/damien.jpg" alt="Damien">
-     <img src="img/nicole.jpg" alt="Nicole">
-     <img src="img/dean.jpg" alt="Dean">
-     <img src="img/sam-a.jpg" alt="Sam">
-   </div>
+<div>
+   <button class="white-button" id="cj-button">Contemporary Jazz</button>
+   <button class="white-button" id="hiphop-button">Hip Hop</button>
+   <button class="white-button" id="jf-button">Jazz Funk</button>
+   <button class="white-button" id="ballet-button">Ballet</button>
+   <button class="white-button" id="allfaculty-button">All Faculty</button>
+</div>
 
-<footer>
+<div class="faculty-img-pg">
+    <!-- <div class="container"> -->
+  <!-- <div class="overlay">
+    <div class="Tovaris-text">Tovaris Wilson</div> -->
+     <img src="img/tovaris.jpg" class="jazz-funk" alt="Tovaris">
+     <img src="img/sabrina.jpg" class="contemp" alt="Sabrina">
+     <img src="img/damien.jpg" class="ballet" alt="Damien">
+
+     <img src="img/nicole.jpg" class="ballet" alt="Nicole">
+     <img src="img/dean.jpg" class="hip-hop" alt="Dean">
+     <img src="img/sam_a.jpg" class="hip-hop" alt="Sam">
+
+     <img src="img/bobby.jpg" class="ballet" alt="Bobby">
+     <img src="img/rudy.jpg" class="contemp" alt="Rudy">
+     <img src="img/leo.jpg"  class="contemp" alt="Leo">
+
+  </div>
+
+
+<footer class="alt-page">
   <p>6300 Romaine St.<br>
     Ste. 100<br>
     Los Angeles, CA 90038<br>
     (323) 962-7733</p>
 
-    <div class="icons">
+    <div class="altpg-icons">
       <a href="https://www.facebook.com/EDGE-Performing-Arts-Center-145186845622/"><i class="fa fa-facebook" style="color:black" aria-hidden="true"></i></a>
       <a href="https://twitter.com/EDGE_PAC"><i class="fa fa-twitter-square" style="color:black" aria-hidden="true"></i></a>
       <a href="https://www.instagram.com/edgepac/"><i class="fa fa-instagram" style="color:black" aria-hidden="true"></i></a>
     </div>
 </footer>
+
+<script src="js/vendor/jquery-1.12.0.min.js"></script>
+<script src="js/main.js"></script>
+
+</section>
 
 </body>
 </html>

@@ -9,6 +9,8 @@
 
 body {
   text-align: center;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1 {
@@ -20,11 +22,12 @@ img {
   max-width: 100%;
 }
 
-button {
+
+/*button {
   text-transform: uppercase;
-  outline: none;
-  padding: 10px;
-}
+  text-decoration: none;
+  padding: .75em;
+}*/
 
 
 /*BUTTONS*/
@@ -33,18 +36,26 @@ button {
   background-color: white;
   border: 2px solid black;
   color: black;
+  padding: 10px 25px;
+  text-decoration: none;
+  border-radius: 3px;
 }
 
 .white-button:hover {
   background-color: black;
   border: 2px solid white;
   color: white;
+  -webkit-transition: all 200ms ease-in-out;
+  transition:all 200ms ease-in-out;
 }
 
 .black-button {
   background-color: black;
   border: 2px solid white;
   color: white;
+  padding: 10px 25px;
+  text-decoration: none;
+  border-radius: 3px;
 }
 
 .black-button:hover {
@@ -70,21 +81,30 @@ background-color: white;
 
 nav a:hover {
   opacity: .5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .scrolled {
   position: fixed;
-  z-index: 100;
-  top:0;
+  background-color: white;
+  z-index: 200;
+  top: 0;
+  margin: 0;
+  padding: 20px;
+  width: 100%;
 }
 
 header img {
-  padding: 110px;
+  padding: 120px;
   /*height: 100px;*/
 }
 
 header img:hover {
   opacity: 0.25;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=25)";
+  cursor: pointer;
 }
 
 /*Who we are SECTION 2*/
@@ -92,6 +112,7 @@ header img:hover {
 .who-we-are {
   padding: 50px 0px 200px 0px;
   background-color: black;
+  /*#A9A9A9*/
   color: white;
 }
 
@@ -99,54 +120,101 @@ header img:hover {
   margin-top: 30px;
   margin: 30px 175px 0px 175px;
   padding: 0px 50px;
+  line-height: normal;
 }
 
 /*Dance With Us SECTION 3*/
 
 .dance-with-us {
   padding: 50px 0px 200px 0px;
+  background-image: url("../img/edge_background.jpg");
+  width: 100%;
+  background-size: cover;
+  height: 500px;
+  margin: 0 auto;
+  color: white;
 }
 
 .dance-with-us h1 {
-  margin-bottom: 30px
+  margin-top: 75px;
+  padding-bottom: 65px;
 }
 
-.dance-with-us button {
-  margin: 0px 10px;
+.dance-with-us a {
+  margin: 50px 10px 40px 10px;
+  border: none;
+}
+
+.dance-with-us a:hover {
+  border: none;
 }
 
 /*FACULTY SECTION 4*/
 
 .faculty {
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .faculty-text {
-  padding: 50px 600px 400px 0px;
+  width: 60%;
+  padding: 4em 1em;
 }
 
 .faculty-img {
-  display: inline-block;
-
+  width: 40%;
+  padding: 5em 0em;
 }
 /*FAQS SECTION 5*/
 
 .faqs {
-  background-color: white;
+  background-color: black;
+  color: white;
   padding: 50px 0px 200px 0px;
 }
 
 /*SOCIAL MEDIA SECTION 6*/
 
+.social-media h1, .icons {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+}
+
+.icons {
+  margin-top: -113px;
+}
+
+.social-media h1 {
+  padding-top: 68px;
+}
+
+.social-img {
+  display: inline-block;
+  width: 100%;
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  position: relative;
+}
+
 .social-media {
-  background-color: black;
-  padding: 50px 0px 200px 0px;
-  color: white;
+  background-color: white;
+  padding: 50px 0px;
+  color: black;
 }
 
 .icons a{
-  color: white;
+  color: black;
   margin: 20px;
   font-size: 30px;
   padding: 30px 0px;
@@ -154,6 +222,7 @@ header img:hover {
 
 .icons a:hover {
   opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
 }
 
 /*FOOTER*/
@@ -161,6 +230,182 @@ header img:hover {
 footer {
   color: black;
   background-color: white;
-  padding: 5px 1000px 5px 0px;
+  /*padding: 5px 1000px 5px 0px;*/
   font-size: 13px;
+  text-align: left;
+  margin: .5em;
 }
+
+.alt-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between
+}
+
+.alt-page p {
+  width: 80%
+}
+
+/*.alt-page .icons a {
+  width: 15%;
+}*/
+
+/*OTHER PAGES BASIC STYLES*/
+
+#faculty-pg h1 , #schedule-pg h1 , #rates-pg h1 , #faqs-pg h1  {
+  padding-top: 20px;
+}
+
+/*FACULTY PAGE*/
+
+.faculty-img-pg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 40px;
+  margin: 0 auto;
+}
+
+/*Trying to do a hover bio*/
+/*
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay:hover {
+  background-color: white;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	opacity: 0.5;
+	transition: all 350ms ease-in-out;
+  width: 250px;
+	height: 375px;
+}*/
+
+.faculty-img-pg img {
+  margin: 10px 10px;
+}
+
+#faculty-pg h1 {
+  padding-top: 20px;
+}
+
+.faculty-paragraph {
+  padding: 0px 175px 15px 175px;
+}
+
+#faculty-pg button {
+  margin: 0px 3px;
+}
+
+/*FAQS PAGE*/
+
+#faqs-page {
+  margin-bottom: 60px;
+  padding: 1.5em 0;
+}
+
+#faqs-page ul {
+  margin-top: 30px;
+  list-style: none;
+}
+
+#faqs-page li {
+  width: 70%;
+}
+
+#faqs-page li {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 48px;
+  margin: 0 auto;
+  cursor: pointer;
+  border-bottom: 1px solid white;
+  background: white;
+  padding: 14px 20px;
+  line-height: 24px;
+}
+
+#faqs-page li:nth-child(odd) {
+  background-color: #eaedf2;
+}
+
+#faqs-page li:nth-child(even) {
+  background-color: white;
+}
+
+li {
+  padding-bottom: 5px;
+}
+
+faqs-active {
+  background-color: white;
+  color: black;
+}
+
+form {
+  display: none;
+}
+
+#form {
+  color: #808080;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+input, .contact-us button {
+  border-radius: 3px;
+}
+
+.contact-us-div {
+  margin: auto;
+  width: 450px;
+  line-height: 1.5em;
+}
+
+input, textarea, form button {
+  border: 2px solid black;
+  color: black;
+  font-size: 0.8em;
+  /*font-family: 'proxima-nova-soft', sans-serif;*/
+  border: 1px solid #ddd;
+  background: #fff;
+  padding: 0.9em;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+}
+
+form button {
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+}
+
+/*Schedule Page*/
+.alt-page {
+  padding-top: 80px;
+}
+
+/*RESPONSIVE DESIGN*/
+
+@media screen and (max-width: 1190px) {
+  .social-img img{
+    width: 40%;
+  }
+
+  @media screen and (max-width: 450px) {
+    .social-img img{
+      width: 100%;
+    }

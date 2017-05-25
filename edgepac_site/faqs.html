@@ -3,15 +3,14 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>FAQS</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
@@ -19,6 +18,7 @@
 
     <body>
 
+<section id="faqs-pg">
       <div class="main-nav">
         <nav>
           <a href="index.html">Home</a>
@@ -31,39 +31,58 @@
 
       <h1>Frequently Asked Questions</h1>
 
-      <h3>What level should I take?</h3>
-      <p>We suggest starting at a lower level just to become acquainted with the teacher and style.</p>
+      <div id="faqs-page">
+        <ul>
+          <li id="question1">What level should I take?</li>
+          <li id="answer1">We suggest starting at a lower level just to become acquainted with the teacher and style.</li>
+          <li id="question2">What do I wear?</li>
+          <li id="answer2">There is no dress code at EDGE, just wear what you feel comfortable dancing in! No ballet shoes? No problem--
+          feel free to rock socks for a couple classes. Sneakers are suggested for hip hop and jazz funk classes.</li>
+          <li id="question3">What's the difference between basic and beginning?</li>
+          <li id="answer3">Never taken dance before? Haven't danced for a while? Basic is where to start! Basic classes will
+          be our most beginning classes, no experience necessary! Beginning is the next level to take after you've mastered
+          basic.</li>
+          <li id="question4">Where can I park?</li>
+          <li id="answer4">We have free parking with validation for as long as your taking class at EDGE. You took class from 10am to 10pm?
+            Ain't no thang--we got you covered. You heard right. Free parking in LA.</li>
+        </ul>
+      </div>
 
-      <h3>What do I wear?</h3>
-      <p>There is no dress code at EDGE, just wear what you feel comfortable dancing in! No ballet shoes? No problem--
-      feel free to rock socks for a couple classes. Sneakers are suggested for hip hop and jazz funk classes.</p>
-
-      <h3>What's the difference between basic and beginning?</h3>
-      <p>Never taken dance before? Haven't danced for a while? Basic is where to start! Basic classes will
-      be our most beginning classes, no experience necessary! Beginning is the next level to take after you've mastered
-      basic.</p>
-
-      <h3>Where can I park?</h3>
-      <p>We have free parking with validation for as long as your taking class at EDGE. You took class from 10am to 10pm?
-        Ain't no thang--we got you covered. You heard right. Free parking in LA.</p>
-
-      <p>Didn't see your question answered? Drop us a line</p>
+      <p>Didn't see your question answered?
+        <span id="form">Drop us a line.</span>
+      </p>
       <!-- Drop us a line will turn into a form when pressed on -->
 
+    <div class="contact-us-div">
+      <form class="contact-us" action="index.html" method="post">
+        <input type="text" name="fullName" placeholder="Full Name">
+        <input type="email" name="email" placeholder="Email Address">
+        <input type="text" name="phone" placeholder="Phone">
+        <input type="text" name="subject" placeholder="Subject">
+        <textarea name="message" placeholder="Your message"></textarea>
+        <button>Submit</button>
+      </form>
+    </div>
 
-
-<footer>
+<footer class="alt-page">
   <p>6300 Romaine St.<br>
     Ste. 100<br>
     Los Angeles, CA 90038<br>
     (323) 962-7733</p>
 
-    <div class="icons">
+    <div class="altpg-icons">
       <a href="https://www.facebook.com/EDGE-Performing-Arts-Center-145186845622/"><i class="fa fa-facebook" style="color:black" aria-hidden="true"></i></a>
       <a href="https://twitter.com/EDGE_PAC"><i class="fa fa-twitter-square" style="color:black" aria-hidden="true"></i></a>
       <a href="https://www.instagram.com/edgepac/"><i class="fa fa-instagram" style="color:black" aria-hidden="true"></i></a>
     </div>
 </footer>
+
+<script src="js/vendor/jquery-1.12.0.min.js"></script>
+<script src="js/main.js"></script>
+
+</section>
+
+
 
 </body>
 </html>

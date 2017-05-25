@@ -1,98 +1,102 @@
 <!doctype html>
 <html lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>schedule</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-    </head>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
 
-    <body>
+<body>
 
-      <div class="main-nav">
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="schedule.html">Schedule</a>
-          <a href="rates.html">Rates</a>
-          <a href="faculty.html">Faculty</a>
-          <a href="faqs.html">Faqs</a>
-        </nav>
-      </div>
+  <section id="schedule-pg">
+    <div class="main-nav">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="rates.html">Rates</a>
+        <a href="faculty.html">Faculty</a>
+        <a href="faqs.html">Faqs</a>
+      </nav>
+    </div>
 
-      <h1>Schedule</h1>
+    <h1>Schedule</h1>
 
-      <div class="">
-         <button class="white-button">Monday</button>
-         <button class="white-button">Tuesday</button>
-         <button class="white-button">Wednesday</button>
-         <button class="white-button">Thursday</button>
-         <button class="white-button">Friday</button>
-         <button class="white-button">Show All</button>
-      </div>
+    <div class="">
+      <button class="white-button" id="mon-sched">Monday</button>
+      <button class="white-button" id="tues-sched">Tuesday</button>
+      <button class="white-button" id="wed-sched">Wednesday</button>
+      <button class="white-button" id="thurs-sched">Thursday</button>
+      <button class="white-button" id="fri-sched">Friday</button>
+      <button class="white-button" id="all-sched">Show All</button>
+    </div>
 
-      <div class="monday-classes">
-        <h2>Monday Classes</h2>
-        <p>10-11:30AM     Int Ballet     Damien Diaz</p>
-        <p>11:30AM-1    Int. Contemporary Jazz     Sabrina Phillip</p>
-        <p>11:30AM-1    Beg Ballet     Nicole Harlan</p>
-      </div>
+    <div class="mon-class">
+      <h2>Monday Classes</h2>
+      <p>10-11:30AM     Int Ballet     Damien Diaz</p>
+      <p>11:30AM-1    Int. Contemporary Jazz     Sabrina Phillip</p>
+      <p>11:30AM-1    Beg Ballet     Nicole Harlan</p>
+    </div>
 
-      <div class="tuesday-classes">
-        <h2>Tuesday Classes</h2>
-        <p>10-11:30AM     Int Ballet     Damien Diaz</p>
-        <p>11:30AM-1    Adv. Contemporary Jazz     Sabrina Phillip</p>
-        <p>1-2PM   Hip Hop     Havic</p>
-        <p>5:30-7PM    Jazz Funk    Tovaris Wilson</p>
-        <p>5:30-6:30PM    Beg Hip Hop     Ben Allen</p>
-        <p>7-8:30PM    Jazz Funk     Dean Bais</p>
-      </div>
+    <div class="tues-class">
+      <h2>Tuesday Classes</h2>
+      <p>10-11:30AM     Int Ballet     Damien Diaz</p>
+      <p>11:30AM-1    Adv. Contemporary Jazz     Sabrina Phillip</p>
+      <p>5:30-7PM    Jazz Funk    Tovaris Wilson</p>
+      <p>5:30-6:30PM    Beg Hip Hop     Ben Allen</p>
+      <p>7-8:30PM    Jazz Funk     Dean Bais</p>
+    </div>
 
-      <div class="wednesday-classes">
-        <h2>Wednesday Classes</h2>
-        <p>10-11:30AM     Int Ballet     Damien Diaz</p>
-        <p>11:30AM-1    Int. Contemporary Jazz     Sabrina Phillip</p>
-        <p>11:30AM-1    Beg Ballet     Nicole Harlan</p>
-        <p>8:30-9:30PM    Beg Hip Hop     Ben Allen</p>
-      </div>
+    <div class="wed-class">
+      <h2>Wednesday Classes</h2>
+      <p>10-11:30AM     Int Ballet     Damien Diaz</p>
+      <p>11:30AM-1    Int. Contemporary Jazz     Sabrina Phillip</p>
+      <p>11:30AM-1    Beg Ballet     Nicole Harlan</p>
+      <p>2:30-4    Contemporary Jazz     Rudy Abreu</p>
+      <p>8:30-9:30PM    Beg Hip Hop     Ben Allen</p>
+    </div>
 
-      <div class="thursday-classes">
-        <h2>Thursday Classes</h2>
-        <p>10-11:30AM     Int Ballet     Damien Diaz</p>
-        <p>11:30AM-1    Adv. Contemporary Jazz     Sabrina Phillip</p>
-        <p>1-2PM   Hip Hop     Havic</p>
-        <p>5:30-7PM    Jazz Funk    Tovaris Wilson</p>
-        <p>7-8PM   Hip Hop     Sam Allen</p>
-      </div>
+    <div class="thurs-class">
+      <h2>Thursday Classes</h2>
+      <p>10-11:30AM     Int Ballet     Damien Diaz</p>
+      <p>11:30AM-1    Adv. Contemporary Jazz     Sabrina Phillip</p>
+      <p>5:30-7PM    Jazz Funk    Tovaris Wilson</p>
+      <p>7-8PM   Hip Hop     Sam Allen</p>
+    </div>
 
-      <div class="friday-classes">
-        <h2>Friday Classes</h2>
-        <p>10-11:30AM     Int Ballet     Bobby Amamizu</p>
-        <p>11:30AM-1    Jazz 3     Eddie Garcia</p>
-        <p>5:30-6:30PM   Beg Hip Hop     Sam Allen</p>
-      </div>
+    <div class="fri-class">
+      <h2>Friday Classes</h2>
+      <p>10-11:30AM     Int Ballet     Bobby Amamizu</p>
+      <p>11:30AM-1    Beg Ballet     Bobby Amamizu</p>
+      <p>5:30-6:30PM   Beg Hip Hop     Sam Allen</p>
+    </div>
 
-      <footer>
-        <p>6300 Romaine St.<br>
-          Ste. 100<br>
-          Los Angeles, CA 90038<br>
-          (323) 962-7733</p>
+    <footer class="alt-page">
+      <p>6300 Romaine St.<br>
+        Ste. 100<br>
+        Los Angeles, CA 90038<br>
+        (323) 962-7733</p>
 
-          <div class="icons">
-            <a href="https://www.facebook.com/EDGE-Performing-Arts-Center-145186845622/"><i class="fa fa-facebook" style="color:black" aria-hidden="true"></i></a>
-            <a href="https://twitter.com/EDGE_PAC"><i class="fa fa-twitter-square" style="color:black" aria-hidden="true"></i></a>
-            <a href="https://www.instagram.com/edgepac/"><i class="fa fa-instagram" style="color:black" aria-hidden="true"></i></a>
-          </div>
+        <div class="altpg-icons">
+          <a href="https://www.facebook.com/EDGE-Performing-Arts-Center-145186845622/"><i class="fa fa-facebook" style="color:black" aria-hidden="true"></i></a>
+          <a href="https://twitter.com/EDGE_PAC"><i class="fa fa-twitter-square" style="color:black" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/edgepac/"><i class="fa fa-instagram" style="color:black" aria-hidden="true"></i></a>
+        </div>
       </footer>
 
-      </body>
-      </html>
+      <script src="js/vendor/jquery-1.12.0.min.js"></script>
+      <script src="js/main.js"></script>
+
+    </section>
+
+  </body>
+  </html>
